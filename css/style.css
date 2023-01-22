@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #09090a;
+  color: #fff;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px;
+  position: fixed;
+  width: 100%;
+}
+button {
+  background-color: transparent;
+  color: #fff;
+  padding: 16px 20px;
+  border: 1px solid #8B5CF6;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  cursor: pointer;
+}
+form {
+  display: flex;
+  padding: 180px 48px 48px 48px;
+  width: fit-content;
+}
+.habits {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 60px;
+}
+.habit {
+  width: 40px;
+  height: 64px;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.day div {
+  margin-bottom: 8px;
+  font-family: 'Roboto Mono';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  color: #A1A1AA;
+  text-align: center;
+}
+input {
+  width: 64px;
+  height: 64px;
+  border: 2px solid #A78BFA;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+input:checked {
+  background-color: #8B5CF6;
+}
+@media screen and (max-width: 570px) {
+  button div {
+    display: none;
+  }
+}
